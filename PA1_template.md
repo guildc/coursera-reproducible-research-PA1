@@ -67,7 +67,7 @@ p <- ggplot() + geom_histogram(data = StepsPerDay, aes(x = total.steps),boundary
 p 
 ```
 
-![](PA1_template_files/figure-html/histogram1-1.png)<!-- -->
+![](figure/histogram1-1.png)<!-- -->
 
 
 ```r
@@ -102,7 +102,7 @@ y <- group_data$mu.steps
 plot(x, y, type = "l", col = "blue", xlab = "Time Interval", ylab = "Average Number of Steps", main = "Average Daily Activity")
 ```
 
-![](PA1_template_files/figure-html/timeseries-1.png)<!-- -->
+![](figure/timeseries-1.png)<!-- -->
 
 
 ```r
@@ -164,7 +164,7 @@ p <- ggplot() + geom_histogram(data = StepsPerDay2, aes(x = total.steps),boundar
 p 
 ```
 
-![](PA1_template_files/figure-html/histogram2-1.png)<!-- -->
+![](figure/histogram2-1.png)<!-- -->
 
 
 ```r
@@ -221,7 +221,7 @@ xyplot(mean.steps ~ interval | weekday.group , grouped.interval.weekday, type = 
        layout = c(1,2), xlab = "Time Interval", ylab = "Average Number of Steps", main="Average Steps Per Time Interval by Weekday Type")
 ```
 
-![](PA1_template_files/figure-html/panel-1.png)<!-- -->
+![](figure/panel-1.png)<!-- -->
 
 ```
 The step activity trends are different based on whether the activity occurs on a weekend versus 
